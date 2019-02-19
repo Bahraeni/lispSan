@@ -1,0 +1,11 @@
+;factorial loop
+(defun factorial (n)
+(setq res 1)
+	(dotimes (i n)
+	(setq res (* res (- n i)))
+	)
+(return-from factorial res)
+)
+(write-line "Enter the number to find its factorial")
+(setq a (read))
+(write (factorial a))
